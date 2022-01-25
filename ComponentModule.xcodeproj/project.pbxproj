@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B31B66AD27A05BBA00735DBE /* ImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31B66AC27A05BBA00735DBE /* ImageProvider.swift */; };
 		B3554ECC27A01737003A1611 /* ComponentModule.docc in Sources */ = {isa = PBXBuildFile; fileRef = B3554ECB27A01737003A1611 /* ComponentModule.docc */; };
 		B3554ED227A01738003A1611 /* ComponentModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3554EC727A01737003A1611 /* ComponentModule.framework */; };
 		B3554ED727A01738003A1611 /* ComponentModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3554ED627A01738003A1611 /* ComponentModuleTests.swift */; };
 		B3554ED827A01738003A1611 /* ComponentModule.h in Headers */ = {isa = PBXBuildFile; fileRef = B3554ECA27A01737003A1611 /* ComponentModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B37F3E9827A02371006989EC /* GMDropdown_DebitAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37F3E9727A02371006989EC /* GMDropdown_DebitAccount.swift */; };
+		B3AC550E27A0604700700739 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3AC550D27A0604700700739 /* Assets.xcassets */; };
+		B3AC551427A0ADE600700739 /* TestSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AC551327A0ADE600700739 /* TestSwiftUIView.swift */; };
 		B3C9515F27A035500045BC62 /* DebitAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C9515E27A035500045BC62 /* DebitAccount.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,12 +29,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B31B66AC27A05BBA00735DBE /* ImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProvider.swift; sourceTree = "<group>"; };
 		B3554EC727A01737003A1611 /* ComponentModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ComponentModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3554ECA27A01737003A1611 /* ComponentModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComponentModule.h; sourceTree = "<group>"; };
 		B3554ECB27A01737003A1611 /* ComponentModule.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ComponentModule.docc; sourceTree = "<group>"; };
 		B3554ED127A01738003A1611 /* ComponentModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComponentModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3554ED627A01738003A1611 /* ComponentModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentModuleTests.swift; sourceTree = "<group>"; };
 		B37F3E9727A02371006989EC /* GMDropdown_DebitAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMDropdown_DebitAccount.swift; sourceTree = "<group>"; };
+		B3AC550D27A0604700700739 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3AC551327A0ADE600700739 /* TestSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwiftUIView.swift; sourceTree = "<group>"; };
 		B3C9515E27A035500045BC62 /* DebitAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebitAccount.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B31B66AB27A05BA600735DBE /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B31B66AC27A05BBA00735DBE /* ImageProvider.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		B3554EBD27A01737003A1611 = {
 			isa = PBXGroup;
 			children = (
@@ -75,10 +89,12 @@
 		B3554EC927A01737003A1611 /* ComponentModule */ = {
 			isa = PBXGroup;
 			children = (
+				B31B66AB27A05BA600735DBE /* Shared */,
 				B3C9515D27A0341A0045BC62 /* Model */,
 				B37F3E9627A0233D006989EC /* View */,
 				B3554ECA27A01737003A1611 /* ComponentModule.h */,
 				B3554ECB27A01737003A1611 /* ComponentModule.docc */,
+				B3AC550D27A0604700700739 /* Assets.xcassets */,
 			);
 			path = ComponentModule;
 			sourceTree = "<group>";
@@ -95,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				B37F3E9727A02371006989EC /* GMDropdown_DebitAccount.swift */,
+				B3AC551327A0ADE600700739 /* TestSwiftUIView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -199,6 +216,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3AC550E27A0604700700739 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +235,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3554ECC27A01737003A1611 /* ComponentModule.docc in Sources */,
+				B31B66AD27A05BBA00735DBE /* ImageProvider.swift in Sources */,
 				B37F3E9827A02371006989EC /* GMDropdown_DebitAccount.swift in Sources */,
+				B3AC551427A0ADE600700739 /* TestSwiftUIView.swift in Sources */,
 				B3C9515F27A035500045BC62 /* DebitAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

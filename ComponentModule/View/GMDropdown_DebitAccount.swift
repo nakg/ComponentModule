@@ -26,6 +26,11 @@ public struct GMDropdown_DebitAccount: View {
 							HStack {
 								Text("test")
 								Image("iconArrowDown")
+								Image("arrow")
+								Image("iconArrowDown", bundle: Bundle.main)
+								Image("iconArrowDown", bundle: Bundle(identifier: "ComponentAssets"))
+								Image(systemName: "iconArrowDown")
+								Image("iconArrowDown", bundle: Bundle.main)
 							}
 							
 							Text("test")
