@@ -12,6 +12,7 @@
 		B3554ED727A01738003A1611 /* ComponentModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3554ED627A01738003A1611 /* ComponentModuleTests.swift */; };
 		B3554ED827A01738003A1611 /* ComponentModule.h in Headers */ = {isa = PBXBuildFile; fileRef = B3554ECA27A01737003A1611 /* ComponentModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B37F3E9827A02371006989EC /* GMDropdown_DebitAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37F3E9727A02371006989EC /* GMDropdown_DebitAccount.swift */; };
+		B3C9515F27A035500045BC62 /* DebitAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C9515E27A035500045BC62 /* DebitAccount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		B3554ED127A01738003A1611 /* ComponentModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComponentModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3554ED627A01738003A1611 /* ComponentModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentModuleTests.swift; sourceTree = "<group>"; };
 		B37F3E9727A02371006989EC /* GMDropdown_DebitAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMDropdown_DebitAccount.swift; sourceTree = "<group>"; };
+		B3C9515E27A035500045BC62 /* DebitAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebitAccount.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		B3554EC927A01737003A1611 /* ComponentModule */ = {
 			isa = PBXGroup;
 			children = (
+				B3C9515D27A0341A0045BC62 /* Model */,
 				B37F3E9627A0233D006989EC /* View */,
 				B3554ECA27A01737003A1611 /* ComponentModule.h */,
 				B3554ECB27A01737003A1611 /* ComponentModule.docc */,
@@ -94,6 +97,14 @@
 				B37F3E9727A02371006989EC /* GMDropdown_DebitAccount.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B3C9515D27A0341A0045BC62 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B3C9515E27A035500045BC62 /* DebitAccount.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +218,7 @@
 			files = (
 				B3554ECC27A01737003A1611 /* ComponentModule.docc in Sources */,
 				B37F3E9827A02371006989EC /* GMDropdown_DebitAccount.swift in Sources */,
+				B3C9515F27A035500045BC62 /* DebitAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
