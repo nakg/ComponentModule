@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-class DebitAccount: ObservableObject {
-	let accountName: String
-	let accountNumber: String
-	let currency: String
+public class DebitAccount: ObservableObject {
+	public let accountName: String
+	public let accountNumber: String
+	public let currency: String
 	@Published var ballance: String
 	
-	init(accountName: String, accountNumber: String, currency: String,ballance: String) {
+	public init(accountName: String, accountNumber: String, currency: String,ballance: String) {
 		self.accountName = accountName
 		self.accountNumber = accountNumber
 		self.currency = currency
@@ -22,21 +22,21 @@ class DebitAccount: ObservableObject {
 }
 
 extension DebitAccount: Equatable {
-	static func == (lhs: DebitAccount, rhs: DebitAccount) -> Bool {
+	public static func == (lhs: DebitAccount, rhs: DebitAccount) -> Bool {
 		return lhs.accountNumber == rhs.accountNumber
 	}
 }
 
 
-class DebitAccountStore: ObservableObject {
+public class DebitAccountStore: ObservableObject {
 	@Published var list: [DebitAccount]
 	
-	init() {
+	public init() {
 		list = [
 		]
 	}
 	
-	func getAllAccounts() {
+	public func getAllAccounts() {
 		list = [
 			DebitAccount(accountName: "USD Online special Savings", accountNumber: "110-492-079472", currency: "USD", ballance: "7,897,018.00"),
 			DebitAccount(accountName: "USD Online special Fund", accountNumber: "294-492-073272", currency: "USD", ballance: "6,318.00"),

@@ -7,8 +7,12 @@
 
 import SwiftUI
 
-struct GMDropdown_DebitAccount: View {
-    var body: some View {
+public struct GMDropdown_DebitAccount: View {
+	public init() {
+		
+	}
+	
+	public var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
