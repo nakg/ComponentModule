@@ -11,6 +11,7 @@
 		B3554ED227A01738003A1611 /* ComponentModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3554EC727A01737003A1611 /* ComponentModule.framework */; };
 		B3554ED727A01738003A1611 /* ComponentModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3554ED627A01738003A1611 /* ComponentModuleTests.swift */; };
 		B3554ED827A01738003A1611 /* ComponentModule.h in Headers */ = {isa = PBXBuildFile; fileRef = B3554ECA27A01737003A1611 /* ComponentModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B37F3E9827A02371006989EC /* GMDropdown_DebitAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37F3E9727A02371006989EC /* GMDropdown_DebitAccount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		B3554ECB27A01737003A1611 /* ComponentModule.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ComponentModule.docc; sourceTree = "<group>"; };
 		B3554ED127A01738003A1611 /* ComponentModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComponentModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3554ED627A01738003A1611 /* ComponentModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentModuleTests.swift; sourceTree = "<group>"; };
+		B37F3E9727A02371006989EC /* GMDropdown_DebitAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMDropdown_DebitAccount.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		B3554EC927A01737003A1611 /* ComponentModule */ = {
 			isa = PBXGroup;
 			children = (
+				B37F3E9627A0233D006989EC /* View */,
 				B3554ECA27A01737003A1611 /* ComponentModule.h */,
 				B3554ECB27A01737003A1611 /* ComponentModule.docc */,
 			);
@@ -83,6 +86,14 @@
 				B3554ED627A01738003A1611 /* ComponentModuleTests.swift */,
 			);
 			path = ComponentModuleTests;
+			sourceTree = "<group>";
+		};
+		B37F3E9627A0233D006989EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B37F3E9727A02371006989EC /* GMDropdown_DebitAccount.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3554ECC27A01737003A1611 /* ComponentModule.docc in Sources */,
+				B37F3E9827A02371006989EC /* GMDropdown_DebitAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +354,7 @@
 		B3554EDC27A01738003A1611 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -360,6 +373,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Nakjin-Kim.ComponentModule";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -369,6 +383,7 @@
 		B3554EDD27A01738003A1611 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -387,6 +402,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Nakjin-Kim.ComponentModule";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -396,6 +412,7 @@
 		B3554EDF27A01738003A1611 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -411,6 +428,7 @@
 		B3554EE027A01738003A1611 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
