@@ -11,13 +11,13 @@ public class DebitAccount: ObservableObject {
 	public let accountName: String
 	public let accountNumber: String
 	public let currency: String
-	@Published var ballance: String
+	@Published var balance: String
 	
-	public init(accountName: String, accountNumber: String, currency: String,ballance: String) {
+	public init(accountName: String, accountNumber: String, currency: String,balance: String) {
 		self.accountName = accountName
 		self.accountNumber = accountNumber
 		self.currency = currency
-		self.ballance = ballance
+		self.balance = balance
 	}
 }
 
@@ -38,9 +38,9 @@ public class DebitAccountStore: ObservableObject {
 	
 	public func getAllAccounts() {
 		list = [
-			DebitAccount(accountName: "USD Online special Savings", accountNumber: "110-492-079472", currency: "USD", ballance: "7,897,018.00"),
-			DebitAccount(accountName: "USD Online special Fund", accountNumber: "294-492-073272", currency: "USD", ballance: "6,318.00"),
-			DebitAccount(accountName: "KHR Online special Fund", accountNumber: "611-492-073272", currency: "USD", ballance: "0.00"),
+			DebitAccount(accountName: "USD Online special Savings", accountNumber: "110-492-079472", currency: "USD", balance: "7,897,018.00"),
+			DebitAccount(accountName: "USD Online special Fund", accountNumber: "294-492-073272", currency: "USD", balance: "6,318.00"),
+			DebitAccount(accountName: "KHR Online special Fund", accountNumber: "611-492-073272", currency: "USD", balance: "0.00"),
 		]
 	}
 }
